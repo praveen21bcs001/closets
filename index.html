@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Closet</title>
+    <link rel="stylesheet" href="democloset.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">My Closet</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#Outfit">Outfit</a></li>
+            <li><a href="#Outfit-preview">Outfit-preview</a></li>
+            <li><a href="#Add-item">Add-item</a></li>
+          </ul>
+        </div>
+      </nav>
+      <section class="card-section">
+        <div class="card">
+            <img src="./pexels-thatguycraig000-1682699.jpg" alt="Card Image">
+            <div class="overlay-text">
+                <h1>Hello and welcome to our site!</h1>
+                <p>We're excited to help you choose your wardrobe on our website!Explore our collection to find the perfect outfits for you.</p>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        
+    
+        </section> -->
+        <section class="closet">
+            <h2>Available Clothes</h2>
+       
+            <div class="clothing-sections">
+                <!-- Shirts Carousel -->
+                <div id="shirtsep-card">
+
+                <div class="clothing-section">
+                    
+                    <h3>Shirts</h3>
+                    <div class="carousel" id="shirtCarousel">
+                        
+                        <div class="items">
+                          
+                            <div class="item">
+                                <img src="https://via.placeholder.com/150/ff6347" alt="Red Shirt">
+                                <p>Red Shirt</p>
+                                <button onclick="selectItem('shirt', 'Red Shirt')">Select</button>
+                            </div>
+                            <div class="item">
+                                <img src="https://via.placeholder.com/150/4682b4" alt="Blue Shirt">
+                                <p>Blue Shirt</p>
+                                <button onclick="selectItem('shirt', 'Blue Shirt')">Select</button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-controls">
+                        <button onclick="prevItem('shirtCarousel')">Previous</button>
+                        <button onclick="nextItem('shirtCarousel')">Next</button>
+                    </div>
+                </div>
+            </div>
+                <!-- Pants Carousel -->
+            <div id="sep-card">     
+                <div class="clothing-section">
+                    <h3>Pants</h3>
+                    <div class="carousel" id="pantsCarousel">
+                        <div class="items">
+                            <div class="item">
+                                <img src="https://via.placeholder.com/150/8b4513" alt="Brown Pants">
+                                <p>Brown Pants</p>
+                                <button onclick="selectItem('pants', 'Brown Pants')">Select</button>
+                            </div>
+                            <div class="item">
+                                <img src="https://via.placeholder.com/150/2e8b57" alt="Green Pants">
+                                <p>Green Pants</p>
+                                <button onclick="selectItem('pants', 'Green Pants')">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-controls">
+                        <button onclick="prevItem('pantsCarousel')">Previous</button>
+                        <button onclick="nextItem('pantsCarousel')">Next</button>
+                    </div>
+                </div>
+            </div>
+                <!-- Outfit Preview -->
+                 <div id="outsep-card">
+                <div class="outfit-preview">
+                    <h3>Outfit Preview</h3>
+                    <div class="preview">
+                        <img id="shirtPreview" src="" alt="Selected Shirt">
+                        <img id="pantsPreview" src="" alt="Selected Pants">
+                    </div>
+                </div>
+                 
+            </div>
+            </div>
+        </section>
+        
+   
+
+        
+        
+    <div id="sep-last">
+         <section class="outfit">
+            <h2>Your Outfit</h2>
+            <p><strong>Shirt:</strong> <span id="selected-shirt">None</span></p>
+            <p><strong>Pants:</strong> <span id="selected-pants">None</span></p>
+            <p id="suggestion"></p>
+        </section>
+       
+        
+        <section class="add-item">
+            <h2>Add New Clothes</h2>
+            <form id="addItemForm">
+                <input type="text" id="itemName" placeholder="Item Name" required>
+                <select id="itemType">
+                    <option value="shirt">Shirt</option>
+                    <option value="pants">Pants</option>
+                </select>
+                <input type="url" id="itemImage" placeholder="Image URL" required>
+                <button type="submit">Add Item</button>
+            </form>
+        </section>
+    </div>   
+    </main>
+    <div id="footer">
+        <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+    </div>
+
+    <script src="closetscript.js"></script>
+</body>
+</html>  
